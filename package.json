@@ -1,0 +1,17 @@
+{
+  "name": "github-script",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A basic web scraping for github",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "puppeteer": "^22.9.0"
+  }
+}
