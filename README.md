@@ -24,7 +24,7 @@ This project is a simple web scraper that uses Puppeteer to retrieve a list of G
    npm install
    ```
 
-3. Create a `.env` file in the root directory and add your GitHub username:
+3. Rename the `.env.example` to `.env` file in the root directory and add your GitHub username:
    ```env
    USER_NAME=your-github-username
    ```
@@ -69,10 +69,10 @@ And more!
 
 ## Contributing 🤝
 
-Contributions are welcome! Feel free to open a pull request if you have any improvements or suggestions or contact me on [LinkedIn](https://www.linkedin.com/in/muhammedmagdyy/).
+Contributions are welcome! Feel free to open a pull request for improvements or suggestions or contact me on [LinkedIn](https://www.linkedin.com/in/muhammedmagdyy/).
 
 ## Contact 📬
 
-For any inquiries, please contact me at my [email](mailto:mohamedmagdy121@outlook.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/muhammedmagdyy/).
+For any inquiries, don't hesitate to get in touch with me at my [email](mailto:mohamedmagdy121@outlook.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/muhammedmagdyy/).
 
 Happy coding! :rocket:
