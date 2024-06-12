@@ -32,7 +32,7 @@ const userChoices = {
     tab: 'followers',
     selector: 'span.Link--secondary',
   },
-  repositores: {
+  repositories: {
     tab: 'repositories',
     selector: `a[itemprop="codeRepository"]`,
   },
