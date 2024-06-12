@@ -3,7 +3,7 @@ import puppeteer from 'puppeteer';
 
 dotenv.config();
 
-async function scrapeTextFromSelectors(url, selector) {
+const scrapeTextFromSelectors = async (url, selector) => {
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
 
@@ -20,7 +20,7 @@ async function scrapeTextFromSelectors(url, selector) {
   console.log(extractedTexts);
 
   await browser.close();
-}
+};
 
 const userChoices = {
   username: process.env.USER_NAME,
