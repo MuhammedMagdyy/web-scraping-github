@@ -40,16 +40,10 @@ npm start
 
 ## Example output for a specific choice 📋
 
+Assuming the user choice is `followers`, then the output will be:
+
 ```javascript
-{
-  followers: [
-    'follower1',
-    'follower2',
-    'follower3',
-    'follower4',
-    'follower5'
-  ]
-}
+['follower1', 'follower2', 'follower3', 'follower4', 'follower5']
 ```
 
 ## Improvements and Future Work 🛠️
