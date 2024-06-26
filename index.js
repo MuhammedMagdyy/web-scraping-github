@@ -23,6 +23,16 @@ const scrapeTextFromSelectors = async (url, selector) => {
   await browser.close();
 };
 
+const getUserInput = async () => {
+  const usernamePrompt = await inquirer.prompt({
+    type: 'input',
+    name: 'username',
+    message: "Enter your or someone else's GitHub username:",
+  });
+
+  return usernamePrompt.username;
+};
+
 const getUserChoice = async () => {
   const questions = [
     {
@@ -36,16 +46,16 @@ const getUserChoice = async () => {
   return inquirer.prompt(questions);
 };
 
-const constructUrlAndSelector = (userInput, userChoices) => {
+const constructUrlAndSelector = (userInput, userChoices, username) => {
   let url, selector;
 
   switch (userInput) {
     case 'followers':
-      url = `https://github.com/${userChoices.username}?tab=${userChoices.followers.tab}`;
+      url = `https://github.com/${username}?tab=${userChoices.followers.tab}`;
       selector = `${userChoices.followers.selector}`;
       break;
     case 'following':
-      url = `https://github.com/${userChoices.username}?tab=${userChoices.following.tab}`;
+      url = `https://github.com/${username}?tab=${userChoices.following.tab}`;
       selector = `${userChoices.following.selector}`;
       break;
     default:
@@ -57,16 +67,12 @@ const constructUrlAndSelector = (userInput, userChoices) => {
 
 const main = async () => {
   try {
-    const username = userChoices.username;
-
-    if (!username) {
-      throw new Error('Username not provided in .env file!');
-    }
-
+    const username = await getUserInput();
     const answers = await getUserChoice();
     const { url, selector } = constructUrlAndSelector(
       answers.choice,
-      userChoices
+      userChoices,
+      username
     );
 
     await scrapeTextFromSelectors(url, selector);
@@ -76,7 +82,6 @@ const main = async () => {
 };
 
 const userChoices = {
-  username: process.env.USER_NAME,
   following: {
     tab: 'following',
     selector: 'span.Link--secondary.pl-1',
