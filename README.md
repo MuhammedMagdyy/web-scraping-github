@@ -12,6 +12,8 @@ This project involves developing a web scraper using Puppeteer to retrieve vario
 
 ## Installation 🛠️
 
+Make sure you have [Node.js](https://nodejs.org/en/download/) installed on your machine.
+
 1. Clone the repository:
 
    ```sh
@@ -25,11 +27,6 @@ This project involves developing a web scraper using Puppeteer to retrieve vario
    npm install
    ```
 
-3. Rename the `.env.example` to `.env` file in the root directory and add your GitHub username:
-   ```env
-   USER_NAME=your-github-username
-   ```
-
 ## Usage 🚀
 
 Run the script using the following command:
@@ -37,6 +34,8 @@ Run the script using the following command:
 ```sh
 npm start
 ```
+
+Then you will be prompted to enter the GitHub username you want to scrape, and then you will be asked to choose the information you want to retrieve (followers, following, etc...).
 
 ## Example output for a specific choice 📋
 
