@@ -1,7 +1,8 @@
-# GitHub Follower/Following Scraper
+# GitHub Scraper
 
 ## Description 📄
-This project is a simple web scraper that uses Puppeteer to retrieve a list of GitHub followers/following for a specified user. The script navigates to the GitHub profile page and extracts the follower/following names.
+
+This project involves developing a web scraper using Puppeteer to retrieve various features from a specified GitHub user profile, such as the number of followers, following, etc... The script is designed to navigate to the user's GitHub profile page and systematically extract the desired information based on user-specified criteria.
 
 ## Features ✨
 
@@ -37,7 +38,7 @@ Run the script using the following command:
 npm start
 ```
 
-## Example for output 📋
+## Example output for a specific choice 📋
 
 ```javascript
 {
@@ -47,23 +48,16 @@ npm start
     'follower3',
     'follower4',
     'follower5'
-  ],
-  following: [
-    'following1',
-    'following2',
-    'following3',
-    'following4',
-    'following5'
   ]
 }
 ```
 
 ## Improvements and Future Work 🛠️
 
-- Add a feature to save the output to a file
-- Add a feature to fetch the list of repositories for a specified user
-- Error handling for invalid usernames
-- Implement pagination to handle users with many followers
+- Add a feature to save the output to a file 🔄
+- Add a feature to fetch the list of repositories for a specified user 🔄
+- Error handling for invalid usernames ✅
+- Implement pagination to handle users with many followers 🔄
 
 And more!
 
