@@ -6,9 +6,9 @@ This project involves developing a web scraper using Puppeteer to retrieve vario
 
 ## Features ✨
 
-- Uses Puppeteer for web scraping
-- Fetches GitHub followers/following for a specified user
-- Outputs the list of followers/following to the console
+- Uses Puppeteer for web scraping and inquirer for user input
+- Fetches GitHub user profile information such as the number of followers, following, etc...
+- Outputs the list of followers or following based on user choice
 
 ## Installation 🛠️
 
@@ -54,6 +54,10 @@ Assuming the user choice is `followers`, then the output will be:
 - Implement pagination to handle users with many followers 🔄
 
 And more!
+
+## Demo 🎥
+
+Coming soon! 🚀
 
 ## Contributing 🤝
 
