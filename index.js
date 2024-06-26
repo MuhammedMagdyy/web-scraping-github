@@ -36,16 +36,16 @@ const getUserChoice = async () => {
   return inquirer.prompt(questions);
 };
 
-const constructUrlAndSelector = (username, userInput, userChoices) => {
+const constructUrlAndSelector = (userInput, userChoices) => {
   let url, selector;
 
   switch (userInput) {
     case 'followers':
-      url = `https://github.com/${username}?tab=${userChoices.followers.tab}`;
+      url = `https://github.com/${userChoices.username}?tab=${userChoices.followers.tab}`;
       selector = `${userChoices.followers.selector}`;
       break;
     case 'following':
-      url = `https://github.com/${username}?tab=${userChoices.following.tab}`;
+      url = `https://github.com/${userChoices.username}?tab=${userChoices.following.tab}`;
       selector = `${userChoices.following.selector}`;
       break;
     default:
@@ -57,14 +57,17 @@ const constructUrlAndSelector = (username, userInput, userChoices) => {
 
 const main = async () => {
   try {
-    const username = process.env.USER_NAME;
+    const username = userChoices.username;
 
     if (!username) {
       throw new Error('Username not provided in .env file!');
     }
 
     const answers = await getUserChoice();
-    const { url, selector } = constructUrlAndSelector(username, answers.choice, userChoices);
+    const { url, selector } = constructUrlAndSelector(
+      answers.choice,
+      userChoices
+    );
 
     await scrapeTextFromSelectors(url, selector);
   } catch (error) {
