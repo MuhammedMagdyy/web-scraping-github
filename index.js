@@ -31,11 +31,7 @@ const userChoices = {
   followers: {
     tab: 'followers',
     selector: 'span.Link--secondary',
-  },
-  repositories: {
-    tab: 'repositories',
-    selector: `a[itemprop="codeRepository"]`,
-  },
+  }
 };
 
 if (userChoices.username) {
