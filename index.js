@@ -1,8 +1,5 @@
-import dotenv from 'dotenv';
 import puppeteer from 'puppeteer';
 import inquirer from 'inquirer';
-
-dotenv.config();
 
 const scrapeTextFromSelectors = async (url, selector) => {
   const browser = await puppeteer.launch();
