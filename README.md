@@ -14,7 +14,7 @@
 
 ## Description 📄
 
-This project involves developing a web scraper using Puppeteer to retrieve various features from a specified GitHub user profile, such as the number of followers, following, etc... The script is designed to navigate to the user's GitHub profile page and systematically extract the desired information based on user-specified criteria.
+This project involves developing a web scraper using Puppeteer to retrieve various features from a specified GitHub user profile, such as the number of followers, following, etc... The script is designed to navigate the user's GitHub profile page and systematically extract the desired information based on user-specified criteria.
 
 ## Features ✨
 
