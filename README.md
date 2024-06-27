@@ -2,15 +2,15 @@
 
 ## Table of Contents 📜
 
-- [Description](#description-)
-- [Features](#features-)
-- [Installation](#installation-)
-- [Usage](#usage-)
-- [Examples](#example-output-for-a-specific-choice-)
-- [Improvements and Future Work](#improvements-and-future-work-)
-- [Demo](#demo-)
-- [Contributing](#contributing-)
-- [Contact](#contact-)
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#example-output-for-a-specific-choice)
+- [Improvements and Future Work](#improvements-and-future-work)
+- [Demo](#demo)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
 ## Description 📄
 
@@ -18,13 +18,13 @@ This project involves developing a web scraper using Puppeteer to retrieve vario
 
 ## Features ✨
 
-- Uses Puppeteer for web scraping and inquirer for user input
+- Uses Puppeteer for web scraping and Inquirer for user input
 - Fetches GitHub user profile information such as the number of followers, following, etc...
 - Outputs the list of followers or following based on user choice
 
 ## Installation 🛠️
 
-Make sure you have [Node.js](https://nodejs.org/en/download/) installed on your machine.
+Please ensure you have [Node.js](https://nodejs.org/en/download/) installed on your machine.
 
 1. Clone the repository:
 
@@ -53,7 +53,7 @@ Then you will be prompted to enter the GitHub username you want to scrape, and t
 
 Assuming the user name is `example-user` and the user chooses to retrieve the list of followers, the output will be:
 
-```javascript
+```
 ==============================================
     GitHub Profile Information for example-user
 ==============================================
