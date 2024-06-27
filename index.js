@@ -109,7 +109,7 @@ const main = async () => {
     console.log('==============================================');
     console.log('\x1b[33m%s\x1b[0m', `Username: ${userInfo.username}`);
     console.log(`Full Name: ${userInfo.fullName}`);
-    console.log(`Bio: ${userInfo.bio}`);
+    console.log(`Bio: ${userInfo.bio.trim() === '' ? 'Not provided' : userInfo.bio}`);
     console.log(`Location: ${userInfo.location}`);
     console.log(`Company: ${userInfo.company}`);
     console.log('----------------------------------------------');
