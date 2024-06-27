@@ -51,16 +51,29 @@ Then you will be prompted to enter the GitHub username you want to scrape, and t
 
 ## Example output for a specific choice 📋
 
-Assuming the user choice is `followers`, then the output will be:
+Assuming the user name is `example-user` and the user chooses to retrieve the list of followers, the output will be:
 
 ```javascript
+==============================================
+    GitHub Profile Information for example-user
+==============================================
+Username: example-user
+Full Name: Example User
+Bio: Example bio
+Location: Cairo, Egypt
+Company: Example Company
+----------------------------------------------
+Fetching followers from GitHub...
 ['follower1', 'follower2', 'follower3', 'follower4', 'follower5']
+✅ Followers fetched successfully.
 ```
 
 ## Improvements and Future Work 🛠️
 
 - Add a feature to save the output to a file 🔄
 - Add a feature to fetch the list of repositories for a specified user 🔄
+- Add a feature to fetch the list of starred repositories for a specified user 🔄
+- Add a feature to fetch the list of organizations for a specified user 🔄
 - Error handling for invalid usernames ✅
 - Implement pagination to handle users with many followers 🔄
 
