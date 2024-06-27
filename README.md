@@ -2,15 +2,15 @@
 
 ## Table of Contents 📜
 
-- [Description](#description)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Examples](#example-output-for-a-specific-choice)
-- [Improvements and Future Work](#improvements-and-future-work)
-- [Demo](#demo)
-- [Contributing](#contributing)
-- [Contact](#contact)
+- [Description](#description-)
+- [Features](#features-)
+- [Installation](#installation-)
+- [Usage](#usage-)
+- [Examples](#example-output-for-a-specific-choice-)
+- [Improvements and Future Work](#improvements-and-future-work-)
+- [Demo](#demo-)
+- [Contributing](#contributing-)
+- [Contact](#contact-)
 
 ## Description 📄
 
