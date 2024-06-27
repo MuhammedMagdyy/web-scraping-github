@@ -4,10 +4,10 @@
 
 - [Description](#description-)
 - [Features](#features-)
-- [Installation](#installation-)
+- [Installation](#installation)
 - [Usage](#usage-)
 - [Examples](#example-output-for-a-specific-choice-)
-- [Improvements and Future Work](#improvements-and-future-work-)
+- [Improvements and Future Work](#improvements-and-future-work)
 - [Demo](#demo-)
 - [Contributing](#contributing-)
 - [Contact](#contact-)
